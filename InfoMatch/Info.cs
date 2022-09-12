@@ -34,11 +34,9 @@ namespace InfoMatch
         }
         public void Atack()
         {
-            var array = new List<string>() { "Dangaros atack", "Dangaros atack", "Dangaros atack", "Completed dangaros atack", "Completed angular", "Completed card", "Angular", "Card" };
-            for (int i = 0; i < array.Count; i++)
-            {
-                InfoMatch(array[i]);
-            }
+            var array = new HashSet<string>() { "Dangaros atack", "Dangaros atack", "Dangaros atack", "Completed dangaros atack", "Completed dangaros atack",  "Angular", "Card","Completed angular", "Completed card", };
+            foreach (string arr in array)
+                InfoMatch(arr);
         }
     }
 }
